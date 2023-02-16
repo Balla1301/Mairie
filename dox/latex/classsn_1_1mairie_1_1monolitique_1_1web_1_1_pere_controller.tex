@@ -1,0 +1,99 @@
+\hypertarget{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller}{}\doxysection{sn.\+mairie.\+monolitique.\+web.\+Pere\+Controller Class Reference}
+\label{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller}\index{sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Pere \mbox{\hyperlink{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a4eeec8e1eb308547c0d0462941128cb2}{save\+Pere}} (@Request\+Body @Valid Pere pere)
+\item 
+List$<$ Pere $>$ \mbox{\hyperlink{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a46bb8c0a74297959193e58775a76e39c}{list\+Peres}} ()
+\item 
+void \mbox{\hyperlink{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_af58e837ac00183e63d65ef4cfdb7ed4e}{delete\+Pere}} (@Path\+Variable(\char`\"{}id\char`\"{}) Long id)
+\item 
+Pere \mbox{\hyperlink{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a764adfaa19bbdd561cfafc0d6c481d5a}{edit\+Pere}} (@Request\+Body Pere p, @Path\+Variable(\char`\"{}id\char`\"{}) Long id)
+\item 
+Pere \mbox{\hyperlink{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_aa0b8eccfa94a195726e1f5c0c400b0a8}{recherche\+Pere}} (@Path\+Variable(\char`\"{}id\char`\"{}) Long id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+BALLA 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxySince}{Since}
+2018
+\end{DoxySince}
+La classe qui represente le controller pour l\textquotesingle{}entite pere cote web 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_af58e837ac00183e63d65ef4cfdb7ed4e}\label{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_af58e837ac00183e63d65ef4cfdb7ed4e}} 
+\index{sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}!deletePere@{deletePere}}
+\index{deletePere@{deletePere}!sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}}
+\doxysubsubsection{\texorpdfstring{deletePere()}{deletePere()}}
+{\footnotesize\ttfamily void sn.\+mairie.\+monolitique.\+web.\+Pere\+Controller.\+delete\+Pere (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) Long}]{id }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & l\textquotesingle{}identifiant de l\textquotesingle{}objet pere a supprimer dans las base de donnee avec l\textquotesingle{}url /pere/\{id\} en DELETE \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a764adfaa19bbdd561cfafc0d6c481d5a}\label{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a764adfaa19bbdd561cfafc0d6c481d5a}} 
+\index{sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}!editPere@{editPere}}
+\index{editPere@{editPere}!sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}}
+\doxysubsubsection{\texorpdfstring{editPere()}{editPere()}}
+{\footnotesize\ttfamily Pere sn.\+mairie.\+monolitique.\+web.\+Pere\+Controller.\+edit\+Pere (\begin{DoxyParamCaption}\item[{@Request\+Body Pere}]{p,  }\item[{@Path\+Variable(\char`\"{}id\char`\"{}) Long}]{id }\end{DoxyParamCaption})}
+
+Modifie un peres de la base de donnée avec l\textquotesingle{}url /peres/\{id\} en PUT 
+\begin{DoxyParams}{Parameters}
+{\em id} & L\textquotesingle{}identifiant du pere qu\textquotesingle{}on veut modifier \\
+\hline
+{\em p} & les nouvelles donnes qu\textquotesingle{}on veut utiliser pour modifier un pere existant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le pere modifie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a46bb8c0a74297959193e58775a76e39c}\label{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a46bb8c0a74297959193e58775a76e39c}} 
+\index{sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}!listPeres@{listPeres}}
+\index{listPeres@{listPeres}!sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}}
+\doxysubsubsection{\texorpdfstring{listPeres()}{listPeres()}}
+{\footnotesize\ttfamily List$<$ Pere $>$ sn.\+mairie.\+monolitique.\+web.\+Pere\+Controller.\+list\+Peres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Renvoi la liste des peres de la base de donnée avec l\textquotesingle{}url /peres en GET \begin{DoxyReturn}{Returns}
+la liste des peres 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_aa0b8eccfa94a195726e1f5c0c400b0a8}\label{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_aa0b8eccfa94a195726e1f5c0c400b0a8}} 
+\index{sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}!recherchePere@{recherchePere}}
+\index{recherchePere@{recherchePere}!sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}}
+\doxysubsubsection{\texorpdfstring{recherchePere()}{recherchePere()}}
+{\footnotesize\ttfamily Pere sn.\+mairie.\+monolitique.\+web.\+Pere\+Controller.\+recherche\+Pere (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) Long}]{id }\end{DoxyParamCaption})}
+
+Renvoi un pere de la base de donnée avec l\textquotesingle{}url /peres/\{id\} en GET 
+\begin{DoxyParams}{Parameters}
+{\em id} & L\textquotesingle{}identifiant du pere qu\textquotesingle{}on veut retrouver \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le pere retrouve 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a4eeec8e1eb308547c0d0462941128cb2}\label{classsn_1_1mairie_1_1monolitique_1_1web_1_1_pere_controller_a4eeec8e1eb308547c0d0462941128cb2}} 
+\index{sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}!savePere@{savePere}}
+\index{savePere@{savePere}!sn.mairie.monolitique.web.PereController@{sn.mairie.monolitique.web.PereController}}
+\doxysubsubsection{\texorpdfstring{savePere()}{savePere()}}
+{\footnotesize\ttfamily Pere sn.\+mairie.\+monolitique.\+web.\+Pere\+Controller.\+save\+Pere (\begin{DoxyParamCaption}\item[{@Request\+Body @Valid Pere}]{pere }\end{DoxyParamCaption})}
+
+Ajoute un nouveau pere dans la base de donnée avec l\textquotesingle{}url /peres en POST 
+\begin{DoxyParams}{Parameters}
+{\em pere} & les donnees d\textquotesingle{}un objet pere a ajouter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+le pere qui a ete ajoute 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+BALLA/eclipse-\/workspace/\+Mairie\+MVC/src/main/java/sn/mairie/monolitique/web/Pere\+Controller.\+java\end{DoxyCompactItemize}
